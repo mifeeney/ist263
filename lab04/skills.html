@@ -3,6 +3,7 @@
  <head>
     <meta charset="utf-8">
     <title>Front End Web Development </title>
+    <link rel="stylesheet" href="../lab06/style.css">
     <style>
       table, th, td {border: 1px solid black}
     </style>
@@ -15,11 +16,35 @@
     <a href="https://www.linkedin.com/in/maireadfeeneyoconnor/" target="_blank">My Linkedin Profile </a> </p>
     <a href="https://www.linkedin.com/in/maireadfeeneyoconnor/" target="_blank"><img src="../Images/logo-sized.png" alt="Linkedin Logo"></a> </p>
     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2916.1321877425303!2d-76.13626712385546!3d43.038650171138016!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d9f39fba2ccc55%3A0x5e6089065251084d!2sSyracuse%20University!5e0!3m2!1sen!2sus!4v1757541821853!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  <br>
+  <form>
+  <label for="fname">First name:</label><br>
+  <input type="text" id="fname" name="fname" value=""><br>
+  <label for="lname">Last name:</label><br>
+  <input type="text" id="lname" name="lname" value="">
+  <br>
+  <input type="submit" value="Submit"> 
+  <br>
+  <br>
+  <form>
+       <textarea name="message" rows="3" cols="30" id="text area"> </textarea>
+       <br>
+       <label for ="text area"> write something here</label>
+       <br>
+       <input type="submit" value="Submit"> 
+       </form>
+</form>
+<br>
+<p>Choose your favorite book genre:</p>
      <form>
-       <textarea name="message" rows="3" cols="30"> </textarea>
-       <label id="write a message"></label>
-  <br><br>
-  
-     </form>
+  <input type="radio" id="fanasty" name="fav_language" value="fantasy">
+  <label for="fanasty">fanasty</label><br>
+  <input type="radio" id="css" name="fav_language" value="horror">
+  <label for="horror">horror</label><br>
+  <input type="radio" id="mystery" name="fav_language" value="mystery">
+  <label for="mystery">mystery</label>
+  <br>
+  <input type="submit" value="Submit"> 
+</form> 
  </body>
  </html>
