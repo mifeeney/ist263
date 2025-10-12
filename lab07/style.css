@@ -1,2 +1,19 @@
-body {background-color:#17292B; }
-body {color:#777076; }
+body {
+  background-color: #03071E;
+  color: #D00000;
+}
+
+a {
+  color: #F48C06; 
+}
+nav{
+    background-color: #370617;
+    padding: 10px;
+    margin-bottom: 30px;
+}
+nav a {
+  color: #E85D04; 
+}
+nav a:hover {
+    color:#9D0208;
+}
