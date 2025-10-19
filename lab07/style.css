@@ -1,19 +1,49 @@
 body {
-  background-color: #03071E;
+  background-color:  #03071E;
   color: #D00000;
+  
+}
+
+header{
+  border: 3px solid #9D0208;
+}
+
+main{
+  border: 3px solid #E85D04;
+  padding: 20px;
 }
 
 a {
   color: #F48C06; 
 }
+
 nav{
     background-color: #370617;
-    padding: 10px;
-    margin-bottom: 30px;
+
 }
+
 nav a {
   color: #E85D04; 
 }
+
 nav a:hover {
     color:#9D0208;
 }
+
+footer{
+  display: flex;                 
+  justify-content: space-between;      
+  border-top: 3px solid #370617
+}
+
+footer .quote {
+  text-align: right;              
+  max-width: 60%;                
+}
+
+address{
+  display: flex;
+  article1: flex1;
+  
+}
+
