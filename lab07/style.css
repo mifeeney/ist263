@@ -24,6 +24,7 @@ nav{
 
 nav a {
   color: #E85D04; 
+  text-align: justify;
 }
 
 nav a:hover {
