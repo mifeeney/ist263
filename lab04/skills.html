@@ -1,58 +1,149 @@
 <!DOCTYPE html>
- <html/lang="eng">
- <head>
+ <html lang="en">
+  <head>
     <meta charset="utf-8">
     <title>Front End Web Development </title>
     <link rel="stylesheet" href="../lab07/style.css">
     <style>
-      table, th, td {border: 1px solid black}
+      body{
+        background-color: #D00000;
+        color: black;
+      }
+      table, th, td {
+        border: 1px solid #F48C06
+      }
+
+      th,td {
+        text-align: justify; padding: 5px;
+      }
+
+      th{ 
+        background-color: #370617;
+      }
+
+      tr:nth-child(even) { 
+        background-color: #0a1341; 
+      }
+
+      .parent-container{
+        display: flex;
+      }
+
+     .two-column{
+      display: flex;                 
+      justify-content: space-between;
+      align-items: stretch;          
+      gap: 20px;    
+     }
+
+     .left-column { 
+      flex: 3;                  
+      padding: 20px;
+      border-radius: 10px;
+    }
+
+    .right-column {
+    background-color: #370617; 
+    color: #F48C06;
+    flex: 1;
+    justify-content: center;
+    padding: 20px;
+    border-radius: 10px;
+    }
+
+    .skill-img {
+    width: 60%;      
+    
+    } 
     </style>
- </head>
+    
+
+   </head>
  <body>
    <nav>
         <a href=https://mifeeney.github.io/ist263/lab02/feeneyoconnor-bio.html target="_blank" >Home</a> |
       <a href=https://mifeeney.github.io/ist263/lab04/skills.html target="_blank">Skills</a> | 
       <a href=https://mifeeney.github.io/ist263/lab03/contact.html target="_blank">Contact </a>
     </nav> 
-    <h1>Contact</h1>
-    <h2> Mairead Feeney O'Connor</h2>
-    <p>900 South Crouse Ave, Syracuse NY, 13244</p>
-    <a href="mailto:mifeeney@syr.edu ">Mairead Feeney O'Connor Email</a> </p>
-    <a href="https://www.linkedin.com/in/maireadfeeneyoconnor/" target="_blank">My Linkedin Profile </a> </p>
-    <a href="https://www.linkedin.com/in/maireadfeeneyoconnor/" target="_blank"><img src="../Images/logo-sized.png" alt="Linkedin Logo"></a> </p>
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2916.1321877425303!2d-76.13626712385546!3d43.038650171138016!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d9f39fba2ccc55%3A0x5e6089065251084d!2sSyracuse%20University!5e0!3m2!1sen!2sus!4v1757541821853!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-  <br>
-  <form>
-  <label for="fname">First name:</label><br>
-  <input type="text" id="fname" name="fname" value=""><br>
-  <label for="lname">Last name:</label><br>
-  <input type="text" id="lname" name="lname" value="">
-  <br>
-  <input type="submit" value="Submit"> 
-  <form action="https://formspree.io/f/mpwylpre" method="POST"></form>
-  <br>
-  <br>
-  <form>
-       <textarea name="message" rows="3" cols="30" id="text area"> </textarea>
-       <br>
-       <label for ="text area"> write something here</label>
-       <br>
-       <input type="submit" value="Submit"> 
-       <form action="https://formspree.io/f/mpwylpre" method="POST"></form>
-       </form>
-</form>
-<br>
-<p>Choose your favorite book genre:</p>
-     <form>
-  <input type="radio" id="fanasty" name="fav_language" value="fantasy">
-  <label for="fanasty">fanasty</label><br>
-  <input type="radio" id="css" name="fav_language" value="horror">
-  <label for="horror">horror</label><br>
-  <input type="radio" id="mystery" name="fav_language" value="mystery">
-  <label for="mystery">mystery</label>
-  <br>
-  <input type="submit" value="Submit"> 
-  <form action="https://formspree.io/f/mpwylpre" method="POST"></form>
-</form> 
- </body>
+    <h1> Technical Skills</h1>
+    <p>I am a student learning Web Development, I am currently working on HTML and CSS</p>
+    <br>
+
+    
+
+    <div class="flex-container">
+      <div class="two-column"> 
+        <div class="left-column">
+          <div class="parent-container">
+            <div class="nested-div">
+              <img src="../Images/noun-html.png" alt="html icon" class="skill-img">
+              <p>HTML</p>
+            </div>
+            <div class="nested-div">
+              <img src="../Images/noun-css.png" alt="css icon" class="skill-img">
+              <p>CSS</p>
+            </div>
+            <div class="nested-div">
+              <img src="../Images/noun-word-doc.png"  alt="Word Document icon" class="skill-img">
+              <p>Microsoft Word</p>
+            </div>
+            <div class="nested-div">
+              <img src="../Images/noun-excel.png"  alt="Excel icon" class="skill-img">
+              <p>Excel</p>
+            </div>
+            <div class="nested-div">
+              <img src="../Images/noun-photoshop.png"  alt="photoshop icon" class="skill-img">
+              <p>Photoshop</p>
+            </div>
+          </div>
+        </div>
+        <div class="right-column">
+          <div> <h2>Other Skills</h2> </div>
+          <div> <p>Writing</p> </div>
+          <div> <p>Reading</p> </div>
+         <div> <p>Critical Thinking</p> </div>
+        </div>
+      </div>
+        
+    </div>
+
+   <!-- <table>
+      <caption>Technical Skills</caption>
+      <tr>
+        <th>Category</th>
+        <th>Skill</th>
+        <th>Competancy Level</th>
+      </tr>
+     <tr>
+        <td>Coding</td>
+        <td>HTML</td>
+        <td>Learning</td>
+      </tr>
+      <tr>
+        <td>Coding</td>
+        <td>CSS</td>
+        <td>Learning</td>
+      </tr>
+      <tr>
+        <td>Operating System</td>
+        <td>Mac</td>
+        <td>Proficient</td>
+      </tr>
+      <tr>
+        <td>Applications</td>
+        <td>Figma</td>
+        <td>Learning</td>
+      </tr>
+       <tr>
+        <td>Applications</td>
+        <td>Microsoft Word</td>
+        <td>Proficient</td>
+      </tr>
+      <tr>
+         <td>Applications</td>
+        <td>Excel</td>
+        <td>Proficient</td>
+      </tr>
+    </table> -->
+  </body>
  </html>
