@@ -1,5 +1,6 @@
 body {
-  background-color:  #03071E;
+  /* background-color:  #03071E; */
+  background-color: black;
   color: #D00000;
   
 }
@@ -24,7 +25,6 @@ nav{
 
 nav a {
   color: #E85D04; 
-  text-align: justify;
 }
 
 nav a:hover {
@@ -41,5 +41,24 @@ footer .quote {
   text-align: right;              
   max-width: 60%;                
 }
+
+.bioimg img{
+  max-width: 100%;
+} 
+ @media only screen and (max-width: 600px) {
+  nav{
+    display: flex;
+    flex-direction: column; 
+    padding: 2px;
+  }
+  nav a{
+    display: block;
+    width: 100%;
+    padding: 2px;
+  }
+  span{
+    display: none; 
+  }
+ }
 
 
