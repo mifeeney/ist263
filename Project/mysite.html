@@ -3,15 +3,41 @@
 <head>
     <meta charset="utf-8">
     <title> mysitle</title>
-    <link ref="stylesheet" href="../Project/sytle.css">
+    <link rel="stylesheet" href="../Project/sytle.css">
+    <style>
+        body{
+            background-color: #1B4332;
+            color: #B7E4C7;
+        }
+        nav{
+            background-color: #40916C;
+            margin: 5px;
+            padding: 3px;
+        }
+       nav a {
+        flex: flex;
+        color: #D8F3DC;
+        justify-content: center;
+        
+        margin: 10px;
+        padding: 10px;
+       }
+        nav a:hover{
+           color: #081C15;
+        
+        }
+       
+    </style>
     
 </head>
 <body>
-    <nav>
-        <a href="homeurl" target="_blank" > Home</a>
-        <a href="historyurl" target="_blank" > Hirsoty</a>
-        <a href="whattowatchurl" target="_blank" > What to Watch</a>
-    </nav>
+    <article class="nav" onsmouseover ="navScroll ()">
+        <nav>
+            <a href="homeurl" target="_blank"> Home</a>
+            <a href="historyurl" target="_blank" > Hirsoty</a>
+            <a href="whattowatchurl" target="_blank" > What to Watch</a>
+        </nav>
+    </article>
     <h1>Title</h1>
     <h2>Basics to Know</h2>
     <p> how genre functions differently</p>
